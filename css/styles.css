@@ -1,3 +1,28 @@
 h2{
   font-size: 16px;
 }
+#userInfo{
+  display: none;
+}
+#userInfo h2{
+  line-height: 1px;
+}
+.fa-github{
+  font-size: 300px;
+}
+h1{
+  font-family: 'Wire One', sans-serif;
+  text-transform: uppercase;
+  font-size: 125px;
+}
+#userInfo, #repos {
+  width: 800px;
+  margin: 0 auto;
+}
+a{
+  color: #00573d;
+}
+a:hover, a:active, a:focus, a:visited {
+  color: #00573d;
+  text-decoration: line-through;
+}

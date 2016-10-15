@@ -11,9 +11,9 @@ User.prototype.getRepos = function(username) {
     var username = response.login;
     var githubURL = response.html_url;
     var lastUpdate = response.updated_at;
-
+    $("#userInfo").show();
     $("#uName").text(username);
-    $("#ghURL").text(githubURL);
+    $("#ghURL").html("<a href='" + githubURL + "'>" + githubURL + "</a>");
     $("#updateDate").text(lastUpdate);
 
   }).fail(function(error){
@@ -23,11 +23,11 @@ User.prototype.getRepos = function(username) {
   $.get('https://api.github.com/users/' + username + '/repos?&per_page=100&access_token=' + apiKey).then(function(response){
       $("#repos").empty();
     for (var i = 0; i < response.length; i++){
-      $("#repos").append("<h2> Repository link: " +
-                          response[i].html_url + "<br>Description: " +
-                          response[i].description + "<br>Git URL: " +
-                          response[i].clone_url + "<br>Created At: " +
-                          response[i].created_at +"</h2>");
+      $("#repos").append("<hr><h2> Repository name: " + response[i].name +
+                          "<br><a href='" + response[i].html_url + "'>" + "Repository link</a> " +
+                          "<br>Description: " + response[i].description +
+                          "<br>Created on: " + response[i].created_at +
+                          "<br>Run the following command to clone: $ git clone " + response[i].clone_url +"</h2>");
     }
   }).fail(function(error){
     console.log(error.responseJSON.message);

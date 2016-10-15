@@ -2,6 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Wire+One" rel="stylesheet">
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
@@ -10,22 +12,23 @@
   </head>
   <body>
     <div class="container">
-
-      <div class="form-group">
-        <form id="githubUser">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username">
-          <button type="submit" class="btn btn-default" id="searchBtn">Search</button>
-        </form>
-      </div>
-      <div>
+      <center>
+        <h1>GitHub Repositories</h1>
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <div class="form-group">
+          <form id="githubUser">
+            <label for="username">Enter a username:</label>
+            <input type="text" id="username" name="username" placeholder="E.g. jsaerom">
+            <button type="submit" class="btn btn-default" id="searchBtn">Search</button>
+          </form>
+        </div>
+      </center>
+      <div id="userInfo">
         <h2>Username: <span id="uName"></span></h2>
         <h2>GitHub URL: <span id="ghURL"></span></h2>
         <h2>Last Updated On <span id="updateDate"></span></h2>
-
-        <div id="repos">
-
-        </div>
+      </div>
+      <div id="repos">
 
       </div>
     </div>
