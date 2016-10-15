@@ -9,6 +9,4 @@ $(document).ready(function() {
     $("#username").val("");
     newUser.getRepos(username);
   });
-
-
 });
