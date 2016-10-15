@@ -26,3 +26,35 @@ a:hover, a:active, a:focus, a:visited {
   color: #00573d;
   text-decoration: line-through;
 }
+.btn-default{
+  padding: 4px;
+}
+.btn-default:hover{
+  color: #00573d;
+  opacity: 0.8;
+  border: 1px solid #00573d;
+  padding: 4px;
+}
+/*.flash{
+  -webkit-animation-name: flashColor;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-iteration-count: 10;
+  -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes flashColor {
+  0%{
+    color: #00573d;
+  /*}
+  25%{
+    color: black;
+  }
+  50%{
+    color: #00573d;
+  }
+  75%{
+    color: black;
+  }*/
+  100%{
+    color: black;
+  }
+}*/
