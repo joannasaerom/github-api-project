@@ -17,6 +17,7 @@ This application integrates with the Github API and allows users to easily searc
 2. Run command: $ git clone https://github.com/jsaerom/github-api-project
 
 **To run the application**
+
 1. To run this application, you will first need to create an .env file in the root directory which will hold your API key. To generate a new API key, navigate to your 'Settings'. On the left-hand side, select 'Personal access tokens'. Select 'Generate New Token' and add a token description. Leave the section below 'Select scopes' blank and click the 'Generate Token' button.
 
 2. In the .env file, insert the following text: exports.apiKey = "YOUR-API-KEY-HERE";
